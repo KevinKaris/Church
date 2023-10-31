@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:wght@700&display=swap');
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav .d-flex {
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+nav a,
+.mobile-nav a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Alef', sans-serif;
+    font-size: 2.3vmin;
+}
+
+nav a:hover,
+.mobile-nav a:hover {
+    border-bottom: 3px dotted rgb(103, 103, 103);
+}
+
+nav img {
+    width: 7vmin;
+    height: auto;
+}
+
+nav>div {
+    justify-content: space-evenly;
+}
+
+nav #dropdown-content,
+.mobile-nav #dropdown-content {
+    position: absolute;
+    display: block;
+    background: white;
+    overflow: hidden;
+    width: 150px;
+    transition: .3s ease-in-out;
+    border-radius: 0 0 5px 5px;
+    max-height: 0;
+}
+
+nav #dropdown-content a,
+.mobile-nav #dropdown-content a {
+    display: inline-block;
+    width: 100%;
+    padding: 6px;
+    border-bottom: 2px solid rgb(232, 232, 232);
+}
+
+nav #dropdown-content a:hover,
+.mobile-nav #dropdown-content a:hover {
+    background: rgb(222, 222, 222);
+}
+
+#dropdown:hover #dropdown-content {
+    max-height: 15rem;
+}
+
+header {
+    height: 70px;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    font-family: 'Fugaz One', cursive;
+    font-size: 6vmin;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.banner p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alef', sans-serif;
+    font-size: 2.5vmin;
+    width: 60%;
+}
+
+.banner h1,
+.banner p {
+    color: white;
+}
+
+.banner a {
+    margin: 10px;
+}
+
+#card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+#card>.col-lg-5>img {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+}
+
+#card .col-lg-7 h1 {
+    text-transform: uppercase;
+    font-family: 'Caladea', serif;
+    font-size: 5vmin;
+}
+
+#card .col-lg-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(227, 238, 252);
+    margin-right: 25px;
+    padding: 20px;
+}
+
+#card section {
+    font-family: 'Alef', sans-serif;
+    font-size: 2.5vmin;
+}
+
+#multi-cards {
+    margin-bottom: 7%;
+}
+
+#multi-cards #header h1 {
+    text-transform: uppercase;
+    font-family: 'Caladea', serif;
+    font-size: 5vmin;
+}
+
+#multi-cards #header p {
+    font-family: 'Alef', sans-serif;
+    font-size: 2.5vmin;
+}
+
+#multi-cards #cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#multi-cards #cards .card {
+    width: 23%;
+    margin: 40px;
+    height: auto;
+    box-shadow: 0 0 15px rgb(181, 181, 181);
+}
+
+#multi-cards #cards .card .card-title {
+    text-transform: uppercase;
+    font-family: 'Caladea', serif;
+    font-size: 3vmin;
+}
+
+#multi-cards #cards .card .card-text {
+    font-family: 'Alef', sans-serif;
+    font-size: 2vmin;
+}
+
+#banner-2 {
+    background-image: linear-gradient(to left bottom, rgb(7, 7, 57), rgb(7, 7, 57), rgb(7, 7, 57), rgb(8, 8, 129));
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+#banner-2 h1 {
+    color: rgb(255, 179, 39);
+    font-family: 'Caladea', serif;
+    font-size: 5vmin;
+}
+
+#banner-2 p {
+    color: white;
+    font-family: 'Alef', sans-serif;
+    font-size: 2.5vmin;
+}
+
+#banner-2 img {
+    width: 100%;
+    height: auto;
+}
+
+#banner-2 .col-lg-7 {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+#banner-2 .col-lg-7 h1 {
+    text-transform: uppercase;
+    font-family: 'Caladea', serif;
+    font-size: 5vmin;
+}
+
+#prayer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 10%;
+}
+
+#prayer h1 {
+    font-family: 'Caladea', serif;
+    font-size: 5vmin;
+}
+
+#prayer p {
+    font-family: 'Alef', sans-serif;
+    font-size: 2.5vmin;
+}
+
+#prayer #form {
+    float: right;
+}
+
+#prayer label {
+    font-family: 'Alef', sans-serif;
+    font-size: 2.5vmin;
+}
+
+#prayer #form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#sub-section h1 {
+    font-family: 'Caladea', serif;
+    font-size: 3vmin;
+}
+
+#sub-section p {
+    font-family: 'Alef', sans-serif;
+    font-size: 2.5vmin;
+}
+
+#sub-section cite {
+    font-family: 'Alef', sans-serif;
+    font-size: 2vmin;
+}
+
+#multi-cards .cards-2>a {
+    width: 18%;
+    margin: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+#multi-cards .cards-2>a>.card h3 {
+    font-family: 'Caladea', serif;
+    font-size: 3vmin;
+}
+
+#multi-cards .cards-2>a>.card p {
+    font-family: 'Alef', sans-serif;
+    font-size: 2.5vmin;
+}
+
+#multi-cards .cards-2>a>.card {
+    width: 100% !important;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#multi-cards .cards-2>a:hover {
+    color: blue;
+}
+
+#upcomings {
+    margin-bottom: 7%;
+}
+
+#upcomings #intro h1 {
+    font-family: 'Caladea', serif;
+    font-size: 3vmin;
+    margin-bottom: 30px;
+}
+
+#upcomings #intro p {
+    font-family: 'Alef', sans-serif;
+    font-size: 2.5vmin;
+}
+
+#upcomings #buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10%;
+    margin: 0 auto;
+}
+
+#upcomings #buttons a {
+    margin: 40px;
+}
+
+.footer {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer #columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer #columns #column {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.footer #columns #column h3 {
+    color: white;
+    font-size: 3vmin;
+}
+
+.footer #columns #column p {
+    color: blue;
+    font-size: 2vmin;
+}
+
+.footer #columns #column a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer span {
+    color: rgb(156, 156, 156);
+    font-size: 2vmin;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socialmedia .fa-brands {
+    color: white;
+}
+
+.socialmedia .fa-facebook-f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: rgb(25, 90, 221);
+    border-radius: 5px;
+}
+
+.socialmedia .fa-twitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: rgb(47, 135, 229);
+    border-radius: 5px;
+}
+
+.socialmedia .fa-instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: rgb(114, 42, 249);
+    border-radius: 5px;
+}
+
+form input,
+form textarea,
+form ::placeholder {
+    font-family: 'Alef', sans-serif;
+    font-size: 2vmin;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        width: 100%;
+    }
+
+    #prayer #form {
+        margin-top: 10vmin;
+    }
+
+    #multi-cards .cards-2>a {
+        width: 30%;
+        margin: 10px;
+    }
+
+    #multi-cards #cards .card {
+        width: 27%;
+        margin: 10px;
+    }
+
+    #banner-2 {
+        flex-wrap: wrap;
+    }
+
+    #card,
+    .footer,
+    #prayer,
+    #multi-cards #cards,
+    .footer #columns,
+    #upcomings #buttons {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    nav a,
+    .banner p,
+    #multi-cards #header p,
+    #card section,
+    #multi-cards #cards .card .card-text,
+    #banner-2 p,
+    #prayer p,
+    #sub-section p,
+    #multi-cards .cards-2>a>.card p,
+    #upcomings #intro p,
+    form input,
+    form textarea,
+    form ::placeholder,
+    .footer span,
+    .footer #columns #column p {
+        font-size: 3vmin;
+    }
+
+    .footer #columns #column h3 {
+        font-size: 3.5vmin;
+    }
+
+    #card .col-lg-7 {
+        width: 100% !important;
+    }
+
+    .banner {
+        margin-top: 100px;
+    }
+
+    .mobile-nav a {
+        font-size: 4vmin;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        top: 63px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 10;
+        background: white;
+        border-radius: 0 0 5px 0;
+        box-shadow: 2px 2px 10px grey;
+        height: fit-content;
+        width: fit-content;
+        left: -250px;
+        transition: .3s ease-in-out;
+    }
+
+    .mobile-nav>a,
+    .mobile-nav>#dropdown {
+        padding-top: 10px;
+        padding-left: 5vmin;
+        padding-right: 20vmin;
+        margin-bottom: 5vmin;
+    }
+
+    .mobile-nav #dropdown-content {
+        position: absolute;
+        left: 50%;
+        z-index: 10;
+        width: 100%;
+        height: fit-content;
+        box-shadow: 0 0 5px grey;
+    }
+
+    nav {
+        width: 80%;
+        flex-wrap: nowrap;
+    }
+
+    nav a {
+        visibility: hidden;
+    }
+
+    nav #logo {
+        visibility: visible !important;
+        width: 10vmin;
+    }
+
+    #mobile-menu {
+        display: block;
+    }
+
+    #mobile-menu>i {
+        font-size: 5vmin;
+    }
+
+    #mobile-menu .fa-times {
+        display: none;
+    }
+
+    #banner-2 .col-lg-7,
+    #card,
+    #card .col-lg-7,
+    #card .col-lg-5,
+    #sub-section p {
+        width: 95% !important;
+    }
+
+    #banner-2 .col-lg-7 {
+        margin-left: 0px !important;
+    }
+
+    #card {
+        padding: 0px !important;
+    }
+
+    #card .col-lg-7 {
+        width: 95%;
+        padding: 0px !important;
+        margin-right: 0px !important;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    nav {
+        margin-right: 0 !important;
+        width: 30%;
+    }
+
+    #mobile-menu>i {
+        font-size: 8vmin;
+        margin-left: -7vmin !important;
+    }
+
+    nav #logo {
+        width: 14vmin;
+    }
+
+    #multi-cards #cards .card,
+    #multi-cards .cards-2>a,
+    .footer #columns #column {
+        width: 95%;
+        margin: 20px auto;
+        border-radius: 5px;
+    }
+
+    #multi-cards .cards-2>a .card {
+        margin: 0 auto !important;
+    }
+
+    form {
+        width: 100% !important;
+    }
+
+    #banner-2 a {
+        width: fit-content !important;
+    }
+
+    .banner p,
+    #multi-cards #header p,
+    #card section,
+    #multi-cards #cards .card .card-text,
+    #banner-2 p,
+    #prayer p,
+    #sub-section p,
+    #multi-cards .cards-2>a>.card p,
+    #upcomings #intro p,
+    form input,
+    form textarea,
+    form ::placeholder,
+    .footer #columns #column p {
+        font-size: 4.5vmin;
+    }
+
+    .banner h1 {
+        font-size: 7.5vmin;
+    }
+
+    .banner {
+        height: 500px !important;
+    }
+
+    #card .col-lg-7 h1,
+    #multi-cards #header h1,
+    #banner-2 h1,
+    #banner-2 .col-lg-7 h1,
+    #prayer h1,
+    #upcomings #intro h1,
+    #multi-cards #cards .card .card-title,
+    #sub-section h1 {
+        font-size: 6.5vmin;
+    }
+
+    .footer #columns #column h3 {
+        font-size: 5vmin;
+    }
+
+    .footer span {
+        font-size: 3vmin;
+    }
+}

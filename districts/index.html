@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../libraries/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../libraries/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../libraries/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <script src="../js.js"></script>
+    <title>PCEA</title>
+    <header class="navbar fixed-top shadow bg-light">
+        <div id="mobile-menu" class="mx-5">
+            <i class="fas fa-bars" id="open_menu"></i>
+            <i class="fas fa-times" id="close_menu"></i>
+        </div>
+        <nav>
+            <div class="d-flex flex-row">
+                <a href="/pcea/"><img src="../images/church-logo.png" id="logo" alt="logo"></a>
+                <div id="dropdown"><a href="javascript:void();" class="dropdown1">Ministries <i
+                            class="fa-solid fa-angle-down"></i></a>
+                    <div id="dropdown-content" class="content1">
+                        <a href="../districts/">Districts</a>
+                        <a href="../children-ministries/">Children ministries</a>
+                        <a href="../youth-church/">Youth church</a>
+                        <a href="../teen-ministry/">Teen ministries</a>
+                        <a href="../groups/">Groups</a>
+                    </div>
+                </div>
+                <a href="../announcements/">Announcements</a>
+                <div id="dropdown"><a href="javascript:void();">Media <i class="fa-solid fa-angle-down"></i></a>
+                    <div id="dropdown-content">
+                        <a href="#">Our blog</a>
+                        <a href="../sermons/">Sermons</a>
+                        <a href="../resources/">More resources</a>
+                    </div>
+                </div>
+                <div id="dropdown"><a href="javascript:void();">Programs <i class="fa-solid fa-angle-down"></i></a>
+                    <div id="dropdown-content">
+                        <a href="../ropes/">Ropes</a>
+                        <a href="../virtual-engagement/">Virtual engagement</a>
+                        <a href="../tranformed-men/">Transformed men series</a>
+                        <a href="../tee/">TEE programme</a>
+                    </div>
+                </div>
+                <a href="../outreach/">Outreach</a>
+                <a href="../events/">Events</a>
+                <div id="dropdown"><a href="javascript:void();">About us <i class="fa-solid fa-angle-down"></i></a>
+                    <div id="dropdown-content">
+                        <a href="#">Who we are</a>
+                        <a href="../projects/">Our projects</a>
+                        <a href="../opportunities/">Opportunities</a>
+                        <a href="../contact/">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="mobile-nav">
+        <div id="dropdown"><a href="javascript:void();">Ministries <i class="fa-solid fa-angle-down"></i></a>
+            <div id="dropdown-content" class="content1">
+                <a href="../districts/">Districts</a>
+                <a href="../children-ministries/">Children ministries</a>
+                <a href="../youth-church/">Youth church</a>
+                <a href="../teen-ministry/">Teen ministries</a>
+                <a href="../groups/">Groups</a>
+            </div>
+        </div>
+        <a href="../announcements/">Announcements</a>
+        <div id="dropdown"><a href="javascript:void();">Media <i class="fa-solid fa-angle-down"></i></a>
+            <div id="dropdown-content">
+                <a href="#">Our blog</a>
+                <a href="../sermons/">Sermons</a>
+                <a href="../resources/">More resources</a>
+            </div>
+        </div>
+        <div id="dropdown"><a href="javascript:void();">Programs <i class="fa-solid fa-angle-down"></i></a>
+            <div id="dropdown-content">
+                <a href="../ropes/">Ropes</a>
+                <a href="../virtual-engagement/">Virtual engagement</a>
+                <a href="../tranformed-men/">Transformed men series</a>
+                <a href="../tee/">TEE programme</a>
+            </div>
+        </div>
+        <a href="../outreach/">Outreach</a>
+        <a href="../events/">Events</a>
+        <div id="dropdown"><a href="javascript:void();">About us <i class="fa-solid fa-angle-down"></i></a>
+            <div id="dropdown-content">
+                <a href="#">Who we are</a>
+                <a href="../projects/">Our projects</a>
+                <a href="../opportunities/">Opportunities</a>
+                <a href="../contact/">Contact us</a>
+            </div>
+        </div>
+    </div>
+</head>
+
+<body>
+    <style>
+        #upcomings #buttons {
+            width: 100%;
+        }
+
+        #upcomings #buttons iframe {
+            width: 100%;
+            height: 32rem;
+        }
+
+        table tr {
+            border: 1px solid grey;
+        }
+
+        table tr:nth-child(even) {
+            background: rgb(243, 243, 243);
+        }
+
+        table td,
+        table th {
+            padding: 10px;
+        }
+
+        form {
+            border: 3px ridge green;
+            padding: 7px;
+            border-radius: 5px;
+        }
+
+        form input {
+            margin-bottom: 20px;
+        }
+
+        .banner {
+            background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../images/districts.jpg');
+        }
+    </style>
+    <div class="banner">
+        <h1>Find a life-long community</h1>
+        <p>We have small groups that make fellowship easier and more intimate</p>
+        <div id="buttons">
+            <a href="#join-fellowship" class="btn btn-outline-light rounded-pill">Join a fellowship</a>
+            <a href="#" class="btn btn-outline-light rounded-pill">Find a district</a>
+        </div>
+    </div>
+
+    <div class="col-12 d-flex flex-row" id="card" align="center">
+        <div class="col-lg-7" style="background-color: white; margin: 0 auto;">
+            <h1>We don’t give up the habit of meeting together</h1><br>
+            <section>We believe that when God created us, he deep seated within us an affinity for relationships and
+                being part of a community. As in Romans 12, we are members of each other and are most effective when we
+                bring our portions of Christ together; connecting with each other towards what God has called us to
+                achieve. Our district fellowships provide a warm environment where you can connect with other members
+                within your area, edifying each other and ministering to the community together. You will find a family
+                who are in your stage in life, and with whom you can walk with through the seasons of live. We would
+                love to have you for our district fellowships!</section>
+        </div>
+        <br>
+    </div><br><br>
+
+    <div id="banner-2" style="background: white;">
+        <div class="col-lg-7" align="center">
+            <h1>Discover our district fellowships</h1><br><br>
+            <p>Our district fellowships take place every week; usually at one of the members residence but due to the
+                pandemic it now takes place virtually. These are our districts and their meeting times.</p><br>
+            <table>
+                <tr>
+                    <th>District Name</th>
+                    <th>Patron</th>
+                    <th>Meet-up Time</th>
+                </tr>
+                <tr>
+                    <td>Unity</td>
+                    <td>Elder Dr. Maina Ngotho</td>
+                    <td>–</td>
+                </tr>
+                <tr>
+                    <td>Unity</td>
+                    <td>Elder Dr. Maina Ngotho</td>
+                    <td>–</td>
+                </tr>
+                <tr>
+                    <td>Pioneer</td>
+                    <td>Elder Maina Rutere</td>
+                    <td>–</td>
+                </tr>
+                <tr>
+                    <td>Bethany</td>
+                    <td>Elder Dr. Maina Ngotho</td>
+                    <td>–</td>
+                </tr>
+                <tr>
+                    <td>Shalom</td>
+                    <td>Elder Patrick Gachagua</td>
+                    <td>–</td>
+                </tr>
+                <tr>
+                    <td>Avenue</td>
+                    <td>Elder Noah Mungai</td>
+                    <td>–</td>
+                </tr>
+                <tr>
+                    <td>Jerusalem</td>
+                    <td>Elder Dr. Maina Ngotho</td>
+                    <td>–</td>
+                </tr>
+                <tr>
+                    <td>Acdemy</td>
+                    <td>Elder Dr. Maina Ngotho</td>
+                    <td>–</td>
+                </tr>
+                <tr>
+                    <td>Plainsview</td>
+                    <td>Elder Caroline Ngunjiri</td>
+                    <td>–</td>
+                </tr>
+                <tr>
+                    <td>Highway</td>
+                    <td>Elder Stephen Keter</td>
+                    <td>–</td>
+                </tr>
+                <tr>
+                    <td>Berea</td>
+                    <td>Elder Dr. Muthoni Gachari</td>
+                    <td>–</td>
+                </tr>
+                <tr>
+                    <td>Riverside</td>
+                    <td>Elder Prof. Daniel Mugendi</td>
+                    <td>–</td>
+                </tr>
+            </table>
+        </div>
+    </div><br><br><br>
+
+    <div id="upcomings" class="d-flex flex-column" align="center" style="background: orange;">
+        <div id="intro" class="d-flex flex-column" align="center">
+            <h1>Which district do you belong to?</h1>
+            <p style="width: 50%; margin: 0 auto;">Do you attend our church and would like to be part of our district
+                fellowships but don’t know which one you belong to? Use the map below to discover our district mapping
+                and where you belong.</p>
+        </div>
+        <div id="buttons" class="mt-5" align="center">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.0703928780727!2d36.62002601475373!3d-1.1094240991907511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f27257d407351%3A0xad262c6f47df119d!2sPCEA%20JEREMIAH%20GITAU%20MEM%20CHURCH!5e0!3m2!1sen!2ske!4v1666556384877!5m2!1sen!2ske"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div id="upcomings" class="d-flex flex-column" align="center">
+        <div id="intro" class="d-flex flex-column" align="center">
+            <h1>Be part of our districts</h1>
+            <p style="width: 50%; margin: 0 auto;">Would you like to be part of our district fellowships? Please leave
+                us with your contacts and we shall reach out to you in 24hrs and link you up with the district elder of
+                the district you belong to</p>
+        </div>
+        <div id="buttons" class="mt-5">
+            <form action="../districts.php" method="post" style="width: 40%;" id="join-fellowship">
+                <label for="name"><b>Name</b></label>
+                <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+                <label for="phone"><b>Phone number</b></label>
+                <input type="phone" name="phone" class="form-control" placeholder="Enter phone number" required>
+                <button type="submit" name="submit" class="btn btn-success form-control">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+<div class="footer" align="center">
+    <div id="columns">
+        <div id="column">
+            <h3>Contact Us</h3>
+            <p>phone number</p>
+            <p>email</p>
+        </div>
+        <div id="column">
+            <h3>Parish Office</h3>
+            <a href="">Contact us</a>
+            <a href="">Ministries</a>
+            <a href="">Giving</a>
+            <a href="">Resources</a>
+        </div>
+        <div id="column">
+            <h3>Information</h3>
+            <a href="">About us</a>
+            <a href="">Work with us</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms and conditions</a>
+        </div>
+        <div id="column">
+            <h3>Want to be joining us?</h3>
+            <p>We would love for you to be fellowshipping with us frequently. Please send us your email.</p>
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/profile.php?id=100077366095617"
+                    class="fa-brands fa-facebook-f mx-3 my-3"></a>
+                <a href="" class="fa-brands fa-twitter mx-3 my-3"></a>
+                <a href="" class="fa-brands fa-instagram mx-3 my-3"></a>
+            </div>
+        </div>
+    </div>
+    <span>©Copyright 2021 | PCEA J.G Memorial Church | All Rights Reserved | Powered by Ceptahost</span>
+</div>
+
+</html>

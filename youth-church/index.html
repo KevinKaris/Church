@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../libraries/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../libraries/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../libraries/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <script src="../js.js"></script>
+    <title>PCEA</title>
+    <header class="navbar fixed-top shadow bg-light">
+        <div id="mobile-menu" class="mx-5">
+            <i class="fas fa-bars" id="open_menu"></i>
+            <i class="fas fa-times" id="close_menu"></i>
+        </div>
+        <nav>
+            <div class="d-flex flex-row">
+                <a href="/pcea/"><img src="../images/church-logo.png" id="logo" alt="logo"></a>
+                <div id="dropdown"><a href="javascript:void();" class="dropdown1">Ministries <i
+                            class="fa-solid fa-angle-down"></i></a>
+                    <div id="dropdown-content" class="content1">
+                        <a href="../districts/">Districts</a>
+                        <a href="../children-ministries/">Children ministries</a>
+                        <a href="../youth-church/">Youth church</a>
+                        <a href="../teen-ministry/">Teen ministries</a>
+                        <a href="../groups/">Groups</a>
+                    </div>
+                </div>
+                <a href="../announcements/">Announcements</a>
+                <div id="dropdown"><a href="javascript:void();">Media <i class="fa-solid fa-angle-down"></i></a>
+                    <div id="dropdown-content">
+                        <a href="#">Our blog</a>
+                        <a href="../sermons/">Sermons</a>
+                        <a href="../resources/">More resources</a>
+                    </div>
+                </div>
+                <div id="dropdown"><a href="javascript:void();">Programs <i class="fa-solid fa-angle-down"></i></a>
+                    <div id="dropdown-content">
+                        <a href="../ropes/">Ropes</a>
+                        <a href="../virtual-engagement/">Virtual engagement</a>
+                        <a href="../tranformed-men/">Transformed men series</a>
+                        <a href="../tee/">TEE programme</a>
+                    </div>
+                </div>
+                <a href="../outreach/">Outreach</a>
+                <a href="../events/">Events</a>
+                <div id="dropdown"><a href="javascript:void();">About us <i class="fa-solid fa-angle-down"></i></a>
+                    <div id="dropdown-content">
+                        <a href="#">Who we are</a>
+                        <a href="../projects/">Our projects</a>
+                        <a href="../opportunities/">Opportunities</a>
+                        <a href="../contact/">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="mobile-nav">
+        <div id="dropdown"><a href="javascript:void();">Ministries <i class="fa-solid fa-angle-down"></i></a>
+            <div id="dropdown-content" class="content1">
+                <a href="../districts/">Districts</a>
+                <a href="../children-ministries/">Children ministries</a>
+                <a href="../youth-church/">Youth church</a>
+                <a href="../teen-ministry/">Teen ministries</a>
+                <a href="../groups/">Groups</a>
+            </div>
+        </div>
+        <a href="../announcements/">Announcements</a>
+        <div id="dropdown"><a href="javascript:void();">Media <i class="fa-solid fa-angle-down"></i></a>
+            <div id="dropdown-content">
+                <a href="#">Our blog</a>
+                <a href="../sermons/">Sermons</a>
+                <a href="../resources/">More resources</a>
+            </div>
+        </div>
+        <div id="dropdown"><a href="javascript:void();">Programs <i class="fa-solid fa-angle-down"></i></a>
+            <div id="dropdown-content">
+                <a href="../ropes/">Ropes</a>
+                <a href="../virtual-engagement/">Virtual engagement</a>
+                <a href="../tranformed-men/">Transformed men series</a>
+                <a href="../tee/">TEE programme</a>
+            </div>
+        </div>
+        <a href="../outreach/">Outreach</a>
+        <a href="../events/">Events</a>
+        <div id="dropdown"><a href="javascript:void();">About us <i class="fa-solid fa-angle-down"></i></a>
+            <div id="dropdown-content">
+                <a href="#">Who we are</a>
+                <a href="../projects/">Our projects</a>
+                <a href="../opportunities/">Opportunities</a>
+                <a href="../contact/">Contact us</a>
+            </div>
+        </div>
+    </div>
+</head>
+
+<body>
+    <style>
+        .banner {
+            height: 700px;
+        }
+
+        #card .col-lg-7 img {
+            width: 90px;
+            height: auto;
+        }
+
+        #multi-cards .card {
+            border: 3px ridge orange;
+            width: 20%;
+        }
+
+        #multi-cards #cards {
+            flex-wrap: wrap;
+        }
+
+        #sub-section p {
+            width: 40%;
+        }
+
+        .banner {
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/youth-ministry.jpg');
+        }
+
+        @media screen and (max-width: 570px) {
+            #card .col-lg-12 h1 {
+                font-size: 6vmin;
+            }
+
+            #sub-section p {
+                width: 90%;
+            }
+
+            #card form {
+                width: 90%;
+            }
+        }
+    </style>
+    <div class="banner">
+        <h1 class="mt-5">Welcome to GWAV Church</h1>
+        <div id="buttons">
+            <a href="" class="btn btn-outline-light rounded-pill">Join a fellowship</a>
+        </div>
+    </div>
+
+    <div class="col-12 d-flex flex-row" id="card">
+        <div class="col-lg-7">
+            <img src="../images/Gwav-Logo.svg" alt=""><br>
+            <section>Gwav is our youth church that came to life in 2008 following a need to form a vibrant fellowship
+                where members from the age of 20 to 35 would connect and build each other concerning God and life.<br>In
+                our youth fellowship, expect to have the best times of your life as we pursue a depth of God that is
+                treasure.<br><br><br>
+                <h1>Welcome!</h1>
+            </section>
+        </div>
+        <br>
+        <div class="col-lg-5">
+            <img src="../images/Gwav-Brush-Image.svg" alt="image">
+        </div>
+    </div>
+
+    <div id="multi-cards" class="col-lg-12" style="background: rgb(205, 222, 205);">
+        <div id="header" align="center">
+            <h1>Fellowship with us during the week!</h1>
+        </div>
+        <div id="cards" class="d-flex flex-row" align="center">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h3 class="card-title">Bible Study</h3>
+                    <div class="card-text">
+                        <p><b>Mondays</b> and <b>Tuesdays</b> from <b>6pm</b> to <b>7:30pm</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h3 class="card-title">Fellowships</h3>
+                    <div class="card-text">
+                        <p>Every <b>Thursday</b> starting from <b>6:30pm</b> to <b>8pm</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h3 class="card-title">Prayers</h3>
+                    <div class="card-text">
+                        <p>Every <b>Friday</b> starting from <b>6pm</b> up until <b>7:30pm</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="multi-cards" class="col-lg-12">
+        <div id="header" align="center">
+            <h1>Our Ministries!</h1>
+        </div>
+        <div id="cards" class="d-flex flex-row" align="center">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h3 class="card-title">Praise & Worship</h3>
+                    <div class="card-text">
+                        <p>Our Praise and worship team is all about using their given talent in music to lead the
+                            congregation into worshiping God in truth and in spirit though songs. The aim is to create
+                            an atmosphere where our members have a safe space to exalt God freely.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h3 class="card-title">Bible Study</h3>
+                    <div class="card-text">
+                        <p>The Word is the food of the spirit. As we continue taking in the Word, we build a strong
+                            spirit within us and grow our faith. At Gwav, we constantly look to build our members in the
+                            knowledge of the Word and encouraging them to live it out in their daily lives.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h3 class="card-title">Hospitality</h3>
+                    <div class="card-text">
+                        <p>As in 1st Peter 4:8 “And above all things have fervent charity among yourselves: for charity
+                            shall cover a multitude of sins”, we want every one who comes to GWAV to meet a welcoming
+                            atmosphere filled with comfort and the freedom to serve and be served.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h3 class="card-title">Men’s Fellowship</h3>
+                    <div class="card-text">
+                        <p>PCYMF is a ministry under the GWAV Church and the PCMF fellowship. Our mission is to grow men
+                            to serve the church, community and grow in our core paradigms: God, Family, Service. It
+                            stems from Romans:12.11; Never be lacking in zeal, but keep your spiritual favour, serving
+                            the Lord.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h3 class="card-title">Ladies Ministry</h3>
+                    <div class="card-text">
+                        <p>Ladies fellowship is a ministry under the GWAV Church whose mission is to grow young women to
+                            serve the church, community and bring them together for Christian fellowship, worship, and
+                            service. We desire that our generation of ladies will grow into God’s design.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h3 class="card-title">Group Fellowships</h3>
+                    <div class="card-text">
+                        <p>Knowing that a cord of three strands cannot be broken, we are a community that largley values
+                            fellowship. We always meet every week in smaller groups. In our fellowships, our members
+                            find a family of young Christians with whom they can grow in life and towards God.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="multi-cards" class="col-lg-12" style="background: rgb(237, 237, 237);">
+        <div id="header" align="center">
+            <h1>Meet Our Leaders</h1>
+        </div>
+        <div id="cards" class="d-flex flex-row cards-2">
+            <a>
+                <div class="card bg-light">
+                    <img src="../images/Brian-y.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Brian Wanjau</h3>
+                        <div class="card-text">
+                            <p><i>Youth Chairperson</i></p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card bg-light">
+                    <img src="../images/Natalie-y.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Natalie Karanja</h3>
+                        <div class="card-text">
+                            <p><i>Youth Vice-Chairperson</i></p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card bg-light">
+                    <img src="../images/Kamara-y.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Brian Kamara</h3>
+                        <div class="card-text">
+                            <p><i>Youth Secretary</i></p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card bg-light">
+                    <img src="../images/Liz-y.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Elizabeth Kimani</h3>
+                        <div class="card-text">
+                            <p><i>Youth Treasurer</i></p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <hr>
+        <div align="center" class="mt-5 mb-3" id="sub-section">
+            <h1>Generational Leadership</h1><br><br>
+            <p>“There is no such thing as a self-made spiritual leader. A true leader influences others spiritually only
+                because the Spirit works in and through him to a greater degree than in those he leads.”</p><br><br>
+            <cite><b>J. Oswald Sanders</b></cite>
+        </div>
+    </div>
+
+    <div class="col-12 d-flex flex-row py-3" id="card">
+        <div class="col-lg-5">
+            <img src="../images/Erick-Coordinator-Sukari-600x750.png" alt="">
+        </div><br>
+        <div class="col-lg-7" align="center" id="signup">
+            <h1>Youth Coordinator</h1><br>
+            <section>Here at GWAV our greatest aim is to pass the faith from one generation to the next. In doing this
+                we create lifelong followers of Jesus as we seek to sustain our church as the place for future
+                generations to worship and grow. We do our best to create consistency between the church and the youth
+                ministry experience through both theological and sound biblical teachings which are in line with the
+                larger vision and mission of our church.<br><br>We have vibrant programs that run throughout the week.
+                Our Sunday GWAV Service runs from 10am -12 noon and its such wonderful experience open for every like-
+                minded youth. All are welcome as we Grow with a Vision!
+            </section>
+        </div>
+        <hr>
+    </div>
+    <div align="center" class="mt-5 mb-3" id="sub-section">
+        <h1>Get in touch with us</h1><br><br>
+        <p>Are you new to our church and would like to join us? Then hit us up! We would like to get to know you and
+            serve God together with you.</p><br><br>
+        <button class="btn btn-dark" id="signup-button">Email Us</button>
+    </div>
+</body>
+<div class="footer" align="center">
+    <div id="columns">
+        <div id="column">
+            <h3>Contact Us</h3>
+            <p>phone number</p>
+            <p>email</p>
+        </div>
+        <div id="column">
+            <h3>Parish Office</h3>
+            <a href="">Contact us</a>
+            <a href="">Ministries</a>
+            <a href="">Giving</a>
+            <a href="">Resources</a>
+        </div>
+        <div id="column">
+            <h3>Information</h3>
+            <a href="">About us</a>
+            <a href="">Work with us</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms and conditions</a>
+        </div>
+        <div id="column">
+            <h3>Want to be joining us?</h3>
+            <p>We would love for you to be fellowshipping with us frequently. Please send us your email.</p>
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/profile.php?id=100077366095617"
+                    class="fa-brands fa-facebook-f mx-3 my-3"></a>
+                <a href="" class="fa-brands fa-twitter mx-3 my-3"></a>
+                <a href="" class="fa-brands fa-instagram mx-3 my-3"></a>
+            </div>
+        </div>
+    </div>
+    <span>©Copyright 2021 | PCEA J.G Memorial Church | All Rights Reserved | Powered by Ceptahost</span>
+</div>
+
+</html>

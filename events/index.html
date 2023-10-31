@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../libraries/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../libraries/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../libraries/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <script src="../js.js"></script>
+    <title>PCEA</title>
+    <header class="navbar fixed-top shadow bg-light">
+        <div id="mobile-menu" class="mx-5">
+            <i class="fas fa-bars" id="open_menu"></i>
+            <i class="fas fa-times" id="close_menu"></i>
+        </div>
+        <nav>
+            <div class="d-flex flex-row">
+                <a href="/pcea/"><img src="../images/church-logo.png" id="logo" alt="logo"></a>
+                <div id="dropdown"><a href="javascript:void();" class="dropdown1">Ministries <i
+                            class="fa-solid fa-angle-down"></i></a>
+                    <div id="dropdown-content" class="content1">
+                        <a href="../districts/">Districts</a>
+                        <a href="../children-ministries/">Children ministries</a>
+                        <a href="../youth-church/">Youth church</a>
+                        <a href="../teen-ministry/">Teen ministries</a>
+                        <a href="../groups/">Groups</a>
+                    </div>
+                </div>
+                <a href="../announcements/">Announcements</a>
+                <div id="dropdown"><a href="javascript:void();">Media <i class="fa-solid fa-angle-down"></i></a>
+                    <div id="dropdown-content">
+                        <a href="#">Our blog</a>
+                        <a href="../sermons/">Sermons</a>
+                        <a href="../resources/">More resources</a>
+                    </div>
+                </div>
+                <div id="dropdown"><a href="javascript:void();">Programs <i class="fa-solid fa-angle-down"></i></a>
+                    <div id="dropdown-content">
+                        <a href="../ropes/">Ropes</a>
+                        <a href="../virtual-engagement/">Virtual engagement</a>
+                        <a href="../tranformed-men/">Transformed men series</a>
+                        <a href="../tee/">TEE programme</a>
+                    </div>
+                </div>
+                <a href="../outreach/">Outreach</a>
+                <a href="../events/">Events</a>
+                <div id="dropdown"><a href="javascript:void();">About us <i class="fa-solid fa-angle-down"></i></a>
+                    <div id="dropdown-content">
+                        <a href="#">Who we are</a>
+                        <a href="../projects/">Our projects</a>
+                        <a href="../opportunities/">Opportunities</a>
+                        <a href="../contact/">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="mobile-nav">
+        <div id="dropdown"><a href="javascript:void();">Ministries <i class="fa-solid fa-angle-down"></i></a>
+            <div id="dropdown-content" class="content1">
+                <a href="../districts/">Districts</a>
+                <a href="../children-ministries/">Children ministries</a>
+                <a href="../youth-church/">Youth church</a>
+                <a href="../teen-ministry/">Teen ministries</a>
+                <a href="../groups/">Groups</a>
+            </div>
+        </div>
+        <a href="../announcements/">Announcements</a>
+        <div id="dropdown"><a href="javascript:void();">Media <i class="fa-solid fa-angle-down"></i></a>
+            <div id="dropdown-content">
+                <a href="#">Our blog</a>
+                <a href="../sermons/">Sermons</a>
+                <a href="../resources/">More resources</a>
+            </div>
+        </div>
+        <div id="dropdown"><a href="javascript:void();">Programs <i class="fa-solid fa-angle-down"></i></a>
+            <div id="dropdown-content">
+                <a href="../ropes/">Ropes</a>
+                <a href="../virtual-engagement/">Virtual engagement</a>
+                <a href="../tranformed-men/">Transformed men series</a>
+                <a href="../tee/">TEE programme</a>
+            </div>
+        </div>
+        <a href="../outreach/">Outreach</a>
+        <a href="../events/">Events</a>
+        <div id="dropdown"><a href="javascript:void();">About us <i class="fa-solid fa-angle-down"></i></a>
+            <div id="dropdown-content">
+                <a href="#">Who we are</a>
+                <a href="../projects/">Our projects</a>
+                <a href="../opportunities/">Opportunities</a>
+                <a href="../contact/">Contact us</a>
+            </div>
+        </div>
+    </div>
+</head>
+
+<body>
+    <script>
+        $(window).ready(function () {
+            var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+            var d = new Date();
+            $('.month').html(monthNames[d.getMonth()] + " " + d.getFullYear());
+            $('.month1').html(monthNames[(d.getMonth()) + 1] + " " + d.getFullYear());
+        });
+    </script>
+    <style>
+        #events {
+            margin-top: 10%;
+            padding: 40Px;
+        }
+
+        #events h4 p {
+            font-family: 'Caladea', serif;
+            font-size: 3.5vmin;
+        }
+
+        #events h3 {
+            font-family: 'Caladea', serif;
+            font-size: 3vmin;
+        }
+
+        #events p {
+            font-family: 'Alef', sans-serif;
+            font-size: 2.5vmin;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        form input {
+            width: 70%;
+            height: 50px;
+            border-radius: 7px;
+            border: 2px solid rgb(189, 189, 189);
+        }
+
+        form button {
+            height: 50px;
+            border: none;
+            outline: none;
+            background: rgb(154, 100, 0);
+            color: white;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width: 570px) {
+            #events h4 p {
+                font-size: 4.5vmin;
+            }
+
+            #events h3 {
+                font-size: 4vmin;
+            }
+
+            #events p {
+                font-size: 4vmin;
+            }
+
+            form input {
+                width: 100%;
+            }
+
+            form button {
+                height: 35px;
+                margin-top: 10px;
+            }
+        }
+    </style>
+    <div id="events">
+        <form action="" method="" align="center">
+            <input type="text" name="search">
+            <button type="submit" name="find">Find events</button>
+        </form><br><br>
+        <h4>
+            <p class="month"></p>
+        </h4>
+        <hr><br>
+        <div class="d-flex flex-row"><span class="mx-5">Mon</span>
+            <section>
+                <p>October 8 @ 8:00 am - October 22 @ 5:00 pm</p><br>
+                <h3>Presbytery</h3>
+            </section>
+        </div><br><br>
+        <div class="d-flex flex-row"><span class="mx-5">Sun</span>
+            <section>
+                <p>October 30</p><br>
+                <h3>Woman’s Guild</h3>
+            </section>
+        </div><br><br>
+        <div class="d-flex flex-row"><span class="mx-5">Sun</span>
+            <section>
+                <p>October 30</p><br>
+                <h3>Presbytery</h3>
+            </section>
+        </div><br><br>
+        <div class="d-flex flex-row"><span class="mx-5">Sun</span>
+            <section>
+                <p>October 30 @ 7:30 am - 9:00 am</p><br>
+                <h3>Finance Committee</h3>
+            </section>
+        </div><br><br>
+
+
+        <h4>
+            <p class="month1"></p>
+        </h4>
+        <hr><br>
+        <div class="d-flex flex-row"><span class="mx-5">Mon</span>
+            <section>
+                <p>November 8 @ 8:00 am - October 22 @ 5:00 pm</p><br>
+                <h3>Presbytery</h3>
+            </section>
+        </div><br><br>
+        <div class="d-flex flex-row"><span class="mx-5">Sun</span>
+            <section>
+                <p>November 30</p><br>
+                <h3>Woman’s Guild</h3>
+            </section>
+        </div><br><br>
+        <div class="d-flex flex-row"><span class="mx-5">Sun</span>
+            <section>
+                <p>November 30</p><br>
+                <h3>Presbytery</h3>
+            </section>
+        </div><br><br>
+        <div class="d-flex flex-row"><span class="mx-5">Sun</span>
+            <section>
+                <p>November 30 @ 7:30 am - 9:00 am</p><br>
+                <h3>Finance Committee</h3>
+            </section>
+        </div><br><br>
+    </div>
+
+</body>
+<div class="footer" align="center">
+    <div id="columns">
+        <div id="column">
+            <h3>Contact Us</h3>
+            <p>phone number</p>
+            <p>email</p>
+        </div>
+        <div id="column">
+            <h3>Parish Office</h3>
+            <a href="">Contact us</a>
+            <a href="">Ministries</a>
+            <a href="">Giving</a>
+            <a href="">Resources</a>
+        </div>
+        <div id="column">
+            <h3>Information</h3>
+            <a href="">About us</a>
+            <a href="">Work with us</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms and conditions</a>
+        </div>
+        <div id="column">
+            <h3>Want to be joining us?</h3>
+            <p>We would love for you to be fellowshipping with us frequently. Please send us your email.</p>
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/profile.php?id=100077366095617"
+                    class="fa-brands fa-facebook-f mx-3 my-3"></a>
+                <a href="" class="fa-brands fa-twitter mx-3 my-3"></a>
+                <a href="" class="fa-brands fa-instagram mx-3 my-3"></a>
+            </div>
+        </div>
+    </div>
+    <span>©Copyright 2021 | PCEA J.G Memorial Church | All Rights Reserved | Powered by Ceptahost</span>
+</div>
+
+</html>
